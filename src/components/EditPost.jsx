@@ -42,7 +42,7 @@ const EditPost = () => {
     >
       <div className="image-container">
         <img
-          src={`http://localhost:8081${imageData}`}
+          src={`${process.env.REACT_APP_IMAGE_URL}${imageData}`}
           alt="Uploaded"
           className="w-64 h-64 object-cover"
         />

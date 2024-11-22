@@ -61,7 +61,7 @@ const PostCard = ({ post, onDelete }) => {
 
       <div className="border border-gray-900 p-2">
         <img
-          src={`http://localhost:8081${post.image}`}
+          src={`${process.env.REACT_APP_IMAGE_URL}${post.image}`}
           alt={post.title}
           className="w-full h-64 object-contain rounded-t-lg"
         />
